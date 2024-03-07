@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -53,4 +54,6 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    public List getCities() {
+    }
 }
