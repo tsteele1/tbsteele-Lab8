@@ -60,4 +60,9 @@ public class CustomList extends ArrayAdapter<City> {
         Collections.sort(list);
         return list;
     }
+
+    public boolean hasCity(City city) {
+        return false;
+    }
+
 }

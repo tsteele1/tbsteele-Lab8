@@ -23,4 +23,14 @@ public class City implements Comparable{
         City city = (City) o;
         return this.city.compareTo(city.getCityName());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        City city = (City) o;
+        if (this.getCityName().equals(city.getCityName()) &&
+                this.getProvinceName().equals(city.getProvinceName())) {
+            return true;
+        }
+        return false;
+    }
 }
