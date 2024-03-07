@@ -55,11 +55,9 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
-    /*
     public List getCities() {
         List list = cities;
         Collections.sort(list);
         return list;
     }
-     */
 }
