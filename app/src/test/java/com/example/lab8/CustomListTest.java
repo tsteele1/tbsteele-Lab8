@@ -39,13 +39,15 @@ public class CustomListTest {
     @Test
     void testGetCities() {
         list = MockCityList();
+        City city1 = new City("Edmonton", "AB");
+        list.addCity(city1);
         assertEquals(0,
-                list.compareTo(list.getCities().get(0)));
-        City city = new City("Charlottetown", "Prince Edward Island");
-        list.addCity(city);
-        assertEquals(0, city.compareTo(list.getCities().get(0)));
+                city1.compareTo(list.getCities().get(0)));
+        City city2 = new City("Charlottetown", "Prince Edward Island");
+        list.addCity(city2);
+        assertEquals(0, city2.compareTo(list.getCities().get(0)));
         assertEquals(0,
-                list.compareTo(list.getCities().get(1)));
+                city1.compareTo(list.getCities().get(1)));
     }
 
 }
