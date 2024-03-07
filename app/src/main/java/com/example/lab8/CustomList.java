@@ -55,9 +55,8 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
-    public List getCities() {
-        List list = cities;
-        Collections.sort(list);
+    public ArrayList<City> getCities() {
+        ArrayList<City> list = new ArrayList<City>();
         return list;
     }
 
